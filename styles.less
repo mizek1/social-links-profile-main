@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@primary: hsl(75, 94%, 57%);
+@neutral-0: hsl(0, 0%, 100%);
+@neutral-7: hsl(0, 0%, 20%);
+@neutral-8: hsl(0, 0%, 12%);
+@neutral-9: hsl(0, 0%, 8%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-color: @neutral-9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  background-color: @neutral-8;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+}
+
+img {
+  width: 8.8rem;
+  height: 8.8rem;
+  border-radius: 50%;
+}
+
+h1,
+h2,
+p,
+a {
+  line-height: 150%;
+  text-align: center;
+  font-style: normal;
+  color: @neutral-0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: @primary;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  flex: 1;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1.2rem;
+  background: @neutral-7;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+a:hover {
+  background: @primary;
+  color: @neutral-7;
+  transition: ease-in-out 0.2s;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 4rem;
+    width: 38.4rem;
+  }
+}
